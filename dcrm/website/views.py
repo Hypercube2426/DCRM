@@ -23,3 +23,7 @@ def logout_user( request ):
     logout(request)
     messages.success(request , "you have been logged out")
     return redirect('home')
+
+def register_user( request ):
+    return render(request , 'register.html' , {})
+    pass
